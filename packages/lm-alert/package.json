@@ -1,6 +1,6 @@
 {
   "name": "lm-alert",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lm-global-utils": "^0.0.4"
+    "lm-global-utils": "^0.0.5"
   },
   "gitHead": "ac26d737311b127708b3513fd5e292bc221773f1"
 }
