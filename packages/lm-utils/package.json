@@ -1,5 +1,5 @@
 {
-  "name": "lm-utils",
+  "name": "lm-global-utils",
   "version": "0.0.3",
   "description": "",
   "main": "index.js",
@@ -8,5 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "gitHead": "2219284cecb72f0a39e53b29b7d54c51fc064c91"
+  "gitHead": "ac26d737311b127708b3513fd5e292bc221773f1"
 }

@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lm-utils": "^0.0.3"
+    "lm-global-utils": "^0.0.3"
   },
-  "gitHead": "2219284cecb72f0a39e53b29b7d54c51fc064c91"
+  "gitHead": "ac26d737311b127708b3513fd5e292bc221773f1"
 }
