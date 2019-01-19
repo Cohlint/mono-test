@@ -1,2 +1,2 @@
 import core from 'lm-global-utils';
-console.log(12345)
+console.log(123456)
