@@ -1,6 +1,6 @@
 {
   "name": "lm-alert",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lm-utils": "1.0.0"
+    "lm-utils": "^0.0.2"
   }
 }
