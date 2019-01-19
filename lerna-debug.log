@@ -1,0 +1,99 @@
+0 silly argv { _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.10.5',
+0 silly argv   '$0': 'lerna' }
+1 notice cli v3.10.5
+2 verbose rootPath /Users/Cohlint/Documents/code/Code/mono-test
+3 verbose session 955d0da5f084b575
+4 verbose user-agent lerna/3.10.5/node@v10.13.0+x64 (darwin)
+5 verbose git-describe undefined => "0a73463"
+6 silly git-describe parsed => {"refCount":"2","sha":"0a73463","isDirty":false}
+7 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.10.5' }
+8 verbose rootPath /Users/Cohlint/Documents/code/Code/mono-test
+9 info current version 0.0.1
+10 silly isAnythingCommitted
+11 verbose isAnythingCommitted 1
+12 silly currentBranch
+13 verbose currentBranch master
+14 silly remoteBranchExists
+15 silly isBehindUpstream
+16 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 1
+17 silly hasTags
+18 verbose hasTags false
+19 info Looking for changed packages since initial commit.
+20 verbose updated lm-alert
+21 verbose updated lm-utils
+22 verbose git-describe undefined => "0a73463"
+23 silly git-describe parsed => {"refCount":"2","sha":"0a73463","isDirty":false}
+24 silly batched [ PackageGraphNode {
+24 silly batched     name: 'lm-utils',
+24 silly batched     externalDependencies: Map {},
+24 silly batched     localDependencies: Map {},
+24 silly batched     localDependents: Map { 'lm-alert' => [PackageGraphNode] } } ]
+25 silly batched [ PackageGraphNode {
+25 silly batched     name: 'lm-alert',
+25 silly batched     externalDependencies: Map {},
+25 silly batched     localDependencies: Map {},
+25 silly batched     localDependents: Map {} } ]
+26 silly lifecycle No script for "preversion" in "root", continuing
+27 silly lifecycle No script for "preversion" in "lm-utils", continuing
+28 silly lifecycle No script for "version" in "lm-utils", continuing
+29 silly lifecycle No script for "preversion" in "lm-alert", continuing
+30 silly lifecycle No script for "version" in "lm-alert", continuing
+31 silly lifecycle No script for "version" in "root", continuing
+32 silly gitAdd [ '/Users/Cohlint/Documents/code/Code/mono-test/packages/lm-utils/package.json',
+32 silly gitAdd   '/Users/Cohlint/Documents/code/Code/mono-test/packages/lm-alert/package.json',
+32 silly gitAdd   '/Users/Cohlint/Documents/code/Code/mono-test/lerna.json' ]
+33 silly gitCommit v0.0.2
+34 verbose git [ 'commit', '-m', 'v0.0.2' ]
+35 silly gitTag v0.0.2
+36 verbose git [ 'tag', 'v0.0.2', '-m', 'v0.0.2' ]
+37 silly lifecycle No script for "postversion" in "lm-alert", continuing
+38 silly lifecycle No script for "postversion" in "lm-utils", continuing
+39 silly lifecycle No script for "postversion" in "root", continuing
+40 info git Pushing tags...
+41 silly gitPush origin master
+42 silly batched [ PackageGraphNode {
+42 silly batched     name: 'lm-utils',
+42 silly batched     externalDependencies: Map {},
+42 silly batched     localDependencies: Map {},
+42 silly batched     localDependents: Map { 'lm-alert' => [PackageGraphNode] } } ]
+43 silly batched [ PackageGraphNode {
+43 silly batched     name: 'lm-alert',
+43 silly batched     externalDependencies: Map {},
+43 silly batched     localDependencies: Map {},
+43 silly batched     localDependents: Map {} } ]
+44 info publish Publishing packages to npm...
+45 info Verifying npm credentials
+46 verbose Retrieving npm user profile
+47 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1245ms
+48 silly npm profile get received {"tfa":false,"name":"cohlint","email":"Cohlint@163.com","email_verified":true,"created":"2015-02-26T01:25:49.966Z","updated":"2019-01-17T08:38:53.641Z","cidr_whitelist":null,"fullname":"川川哥哥","homepage":"","freenode":"","twitter":"","github":"https://github.com/Cohlint"}
+49 silly npm whoami received {"username":"cohlint"}
+50 silly verifyNpmPackageAccess
+51 http fetch GET 200 https://registry.npmjs.org/-/org/cohlint/package?format=cli 297ms
+52 warn ENOLICENSE Packages lm-alert, lm-utils are missing a license
+53 silly getCurrentSHA
+54 verbose getCurrentSHA 2219284cecb72f0a39e53b29b7d54c51fc064c91
+55 silly lifecycle No script for "prepublish" in "root", continuing
+56 silly lifecycle No script for "prepare" in "root", continuing
+57 silly lifecycle No script for "prepublishOnly" in "root", continuing
+58 silly lifecycle No script for "prepack" in "root", continuing
+59 verbose pack-directory packages/lm-utils
+60 silly lifecycle No script for "prepublish" in "lm-utils", continuing
+61 silly lifecycle No script for "prepare" in "lm-utils", continuing
+62 silly lifecycle No script for "prepublishOnly" in "lm-utils", continuing
+63 silly lifecycle No script for "prepack" in "lm-utils", continuing
+64 silly lifecycle No script for "postpack" in "lm-utils", continuing
+65 verbose packed lm-utils packages/lm-utils
+66 verbose pack-directory packages/lm-alert
+67 silly lifecycle No script for "prepublish" in "lm-alert", continuing
+68 silly lifecycle No script for "prepare" in "lm-alert", continuing
+69 silly lifecycle No script for "prepublishOnly" in "lm-alert", continuing
+70 silly lifecycle No script for "prepack" in "lm-alert", continuing
+71 silly lifecycle No script for "postpack" in "lm-alert", continuing
+72 verbose packed lm-alert packages/lm-alert
+73 silly lifecycle No script for "postpack" in "root", continuing
+74 verbose publish lm-utils
+75 http fetch PUT 403 https://registry.npmjs.org/lm-utils 556ms
+76 error Error: 403 Forbidden - PUT https://registry.npmjs.org/lm-utils - You do not have permission to publish "lm-utils". Are you logged in as the correct user?
+76 error     at res.buffer.catch.then.body (/Users/Cohlint/.nvm/versions/node/v10.13.0/lib/node_modules/lerna/node_modules/npm-registry-fetch/check-response.js:104:15)
